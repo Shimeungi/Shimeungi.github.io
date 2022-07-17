@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momentum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    실시간 시계 (완)
+    로컬 스토리지를 사용한 로그인
+    로컬 스토리지를 사용한 투두리스트
+    랜덤 배경 이미지
+    날씨와 위치 (geolocation)
+    여러분의 CSS 실력을 뽐내주세요💖
+  -->
+
+
+  <nav class = "navstyle">
+    <div class = "currentTime">
+      <!-- 날짜, 시간-->
+      <h1></h1>
+      <h1></h1>
+    </div>
+
+    <div class = "userIdBox">
+      <h1 class = "greeting"></h1>
+    </div>
+    
+  </nav>
+  <div class = "container">
+
+    <div class = "toDo">
+        <img src = "img/toDoBtn.png" alt = "toDoBtn" id = "toDoBtn" class = "hidden"
+          width = "50px" height = "60px">
+      
+        <div class = "toDoList hidden">
+          <p>Today's toDoList</p>
+          <form id = "toDoForm" return = "false">
+            <input type = "text" id = "toDoInput" placeholder = "Write a To do and Press enter" required>
+            <button type = "submit" id = "toDoFormBtn">입력</button>
+          </form>
+          
+          <ul class = "toDoListUl">
+              
+          </ul>
+        </div>
+    </div>
+
+    <div class = "login">
+     
+      <div class = "loginInputForm">
+        <form class = "hidden" id = "loginForm">
+          <input type = "text" id = "userId" placeholder = "What is your name" maxlength = "15" required>
+
+          <button type = "submit" id = "loginBtn">login</button>
+          
+        </form>
+        
+        <div class = "logOutForm">
+          <button type = "button" id = "logOutBtn" class = "hidden">logOut</button>
+        </div>
+      </div>
+   </div>
+
+   <div class = "weather">
+      <h2></h2>
+      <h2></h2>
+    </div>
+
+    
+  </div>
+ 
+ 
+ 
+</body>
+<script src="js/clock.js"></script>
+<script src="js/login.js"></script>
+<script src="js/background.js"></script>
+<script src="js/todo.js"></script>
+<script src = "js/weather.js"></script>
+</html>

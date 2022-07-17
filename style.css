@@ -1,0 +1,138 @@
+html, body{
+  width: 100%;
+  height: 100%;
+
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  height: 80%;
+ 
+  align-items: center;
+}
+
+.container .toDo{
+  width: 20%;
+  margin-left: 20px;
+  margin-bottom: auto;
+  float: left;
+}
+
+.container .toDo #toDoBtn{
+  cursor: pointer;
+}
+
+.container .toDo .toDoList{
+  color : white;
+}
+
+.container .toDo .toDoList .toDoListUl button:hover{
+  cursor: pointer;
+  background-color: red;
+}
+
+.container .login{
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  height: 50%;
+
+
+  border: 1px solid white;
+  
+}
+
+
+.container .login .loginInputForm{
+  display: block;
+  height: 50%;
+  color : white;
+  padding-top: 15%;
+  padding-bottom: 10%;
+  text-align: center;
+}
+
+.container .login .logOutForm{
+  display: block;
+  height: 50%;
+  color : white;
+
+  text-align: center;
+
+}
+
+.container .login .logOutForm #logOutBtn{
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  color : white;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+
+}
+
+.container .login .logOutForm #logOutBtn:hover{
+  
+  color : black;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+
+}
+
+.container .weather{
+  width: 25%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: auto;
+  float: left;
+}
+
+.container .weather h2{
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+}
+.navstyle{
+  display: flex;
+  width: 100%;
+  height: 20%;
+}
+
+.navstyle .currentTime{
+  float: left;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+
+.navstyle .userIdBox{
+  margin-right: 20px;
+  margin-left:auto;
+}
+
+.navstyle .userIdBox .greeting{
+  color: white;
+}
+
+.currentTime{
+  color: white;
+}
+.hidden{
+  display:none;
+}
+
